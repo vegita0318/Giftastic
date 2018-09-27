@@ -86,7 +86,7 @@ $("div").on("click", "button", function() {
   });
 });
 
-$("div").on("click", "img", function() { 
+$("#superheroPics").on("click", "img", function() { 
 
     var state = $(this).attr("data-state");
     
@@ -100,4 +100,8 @@ $("div").on("click", "img", function() {
       $(this).attr("src", srcStill);
       $(this).attr("data-state", "still");
     }
+});
+
+$("#clear").on("click", function(){
+    $("#superheroPics").empty();
 });
